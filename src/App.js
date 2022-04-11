@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import HotelRooms from './components/HotelRooms/HotelRooms';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
+import RequireAuth from './RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -16,7 +17,14 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/rooms" element={<HotelRooms />}></Route>
-        <Route path="/checkout" element={<Checkout />}></Route>
+        <Route
+          path="/checkout"
+          element={
+            <RequireAuth>
+              <Checkout />
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>

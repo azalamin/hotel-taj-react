@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import useFirebase from "../../hooks/useFirebase";
 import "./Login.css";
@@ -10,9 +10,12 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [customError, setCustomError] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
   const { signInWithGoogle } = useFirebase();
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+
+const from = location?.state?.from?.pathname || '/';
 
   const handleEmailBlur = (event) => {
     setEmail(event.target.value);
@@ -23,10 +26,12 @@ const Login = () => {
 
   const handleSignIn = (event) => {
     event.preventDefault();
-    signInWithEmailAndPassword(email, password).then(() => {
-        navigate('/home')
-    })
+    signInWithEmailAndPassword(email, password)
   };
+
+  if (user) {
+      navigate(from, {replace: true})
+  }
 
   useEffect(() => {
     if (error?.message.includes("wrong")) {
