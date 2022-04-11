@@ -1,0 +1,46 @@
+.form-main {
+  width: 450px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgba(255, 99, 71, 0.941);
+}
+.form-main h1 {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-left: 5px;
+}
+.form-group input {
+  width: 90%;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  font-size: 20px;
+}
+.submit-btn {
+  width: 95%;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  font-size: 20px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: rgb(223, 223, 223);
+}
+.custom-btn {
+  margin-top: 30px;
+  width: 95%;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 16px;
+  cursor: pointer;
+  background-color: aliceblue;
+}
