@@ -21,6 +21,9 @@ const Header = () => {
             <Link className="nav-link me-4" to={"/rooms"}>
               Hotel Rooms
             </Link>
+            {user?.uid ? <Link className="nav-link me-4" to={"/checkout"}>
+              Checkout
+            </Link> : <></>}
             <Link className="nav-link me-4" to={"/about"}>
               About us
             </Link>
