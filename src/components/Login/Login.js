@@ -14,7 +14,7 @@ const Login = () => {
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
-              <input type="password" name="password" id="" />
+              <input type="password" name="password" id="pas" />
               <br />
               <small style={{ textAlign: "center" }}>
                 New to Hotel Taj? <Link to="/signup">Create an account</Link>
