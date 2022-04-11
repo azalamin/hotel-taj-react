@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import useFirebase from '../../hooks/useFirebase';
 
@@ -9,7 +9,7 @@ const SignUp = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState("");
     const [passwordMisMatch, setPasswordMisMatch] = useState('');
-    
+    const navigate = useNavigate();
     const {signInWithGoogle} = useFirebase();
     const [createUserWithEmailAndPassword, user, loading, error] =
       useCreateUserWithEmailAndPassword(auth);
@@ -38,7 +38,10 @@ const SignUp = () => {
             return;
         }
 
-        createUserWithEmailAndPassword(email, password);
+        createUserWithEmailAndPassword(email, password)
+        .then(() => {
+            navigate('/home')
+        })
     }
     
     return (
