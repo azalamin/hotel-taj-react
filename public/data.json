@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Corporate Room",
+    "price": 800,
+    "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+    "img": "https://i.ibb.co/mSMVfZt/corporate-room.png"
+  },
+  {
+    "id": 2,
+    "name": "Couple Room",
+    "price": 600,
+    "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+    "img": "https://i.ibb.co/PtyrGxr/couple-room.png"
+  },
+  {
+    "id": 3,
+    "name": "Family Room",
+    "price": 700,
+    "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+    "img": "https://i.ibb.co/r2SDZFH/family-room.png"
+  },
+  {
+    "id": 4,
+    "name": "Guest Room",
+    "price": 550,
+    "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+    "img": "https://i.ibb.co/XDgZfMZ/guest-room.png"
+  },
+  {
+    "id": 5,
+    "name": "Lobby Room",
+    "price": 750,
+    "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+    "img": "https://i.ibb.co/c2pNbKX/lobby-room.png"
+  },
+  {
+    "id": 6,
+    "name": "Meeting Room",
+    "price": 1200,
+    "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+    "img": "https://i.ibb.co/4NQwDFM/meeting-room.png"
+  }
+]

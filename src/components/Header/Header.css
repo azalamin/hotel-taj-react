@@ -1,0 +1,13 @@
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-logo {
+  text-decoration: none;
+  color: tomato;
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav-logo:hover {
+  color: rgb(169, 53, 33);
+}
